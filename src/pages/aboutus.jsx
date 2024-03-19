@@ -6,7 +6,7 @@ const Aboutus = () => {
     return(
         <div>
             <Header/>
-            <div className="flex w-2/3 mx-auto max-sm:h-auto h-dvh items-center ">
+            <div className="flex w-2/3 mx-auto max-sm:h-auto my-24 max-sm:my-12 items-center ">
                 <div className="flex flex-col space-y-4 items-center  md:flex-grow rounded-md shadow-md p-10 bg-[#F8F7F7] max-sm:p-4 max-sm:my-4 max-sm:flex-shrink">
                 <p className="text-2xl  font-medium text-[#8E8988] font-poppins">About Us</p>
                 <p className="text-l">Welcome to Cool Breezes: Your Ultimate Destination for Air Cooling Solutions</p>

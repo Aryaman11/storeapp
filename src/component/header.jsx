@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () =>{
     return (
@@ -10,9 +11,9 @@ const Header = () =>{
                 
                 <ul className=" md:grid md:grid-flow-col md:grid-cols-5 text-xl font-medium text-[#8E8988] font-poppins md:items-center ">
                     <li className="md:w-[50%]"><img className="rounded-2xl" src='./images/logo.png'/></li>
-                    <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer">Home</li>
+                    <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer"><Link to="/">Home</Link></li>
                     <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer">Category</li>
-                    <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer">About us</li>
+                    <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer"><Link to="/aboutus">About us</Link></li>
                     <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer">Contact us</li>
                     <li></li>
                 </ul>
