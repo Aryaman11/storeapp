@@ -16,7 +16,8 @@ const Banner = () =>{
                 slidesPerView={1}
     >
       <SwiperSlide><img className="h-full w-full p-2" src="./images/Banner.png" /></SwiperSlide>
-      <SwiperSlide><img className="h-full w-full p-2" src="./images/Banner1.jpg" /></SwiperSlide>
+      <SwiperSlide><img className="h-full w-full p-2" src="./images/Banner2.jpg" /></SwiperSlide>
+      {/* <SwiperSlide><img className="h-full w-full p-2" src="./images/Banner1.jpg" /></SwiperSlide> */}
       
       
     </Swiper>
