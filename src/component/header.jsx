@@ -13,8 +13,8 @@ const Header = () =>{
                     <li className="md:w-[50%]"><img className="rounded-2xl" src='./images/logo.png'/></li>
                     <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer"><Link to="/">Home</Link></li>
                     <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer">Category</li>
-                    <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer"><Link to="/aboutus">About us</Link></li>
-                    <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer">Contact us</li>
+                    <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer"><Link to="/about">About us</Link></li>
+                    <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer"><Link to="/contact">Contact us</Link></li>
                     <li></li>
                 </ul>
 
