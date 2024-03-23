@@ -30,7 +30,7 @@ const Query = () =>{
                     </div>
                     <div className="my-8 w-full">
                         <label className="font-semibold pr-4" >Message : </label>
-                        <textarea value="" className="rounded-2xl p-2 text-center" placeholder="Enter your contact number"/>
+                        <textarea value="" className="rounded-2xl p-2 text-center" placeholder="Enter your contact number"/>    
                     </div>
                 </div>
 
