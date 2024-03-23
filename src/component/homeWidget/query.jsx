@@ -1,6 +1,6 @@
 const Query = () =>{
     return(
-        <div className="lg:mx-32 lg:my-8 lg:py-4 bg-[#EDEBEB] font-poppins rounded-3xl ">
+        <div className="mx-32 my-8 py-4 bg-[#EDEBEB] font-poppins rounded-3xl ">
             <div className="flex justify-center items-center">
                 <svg fill="#000000" width="32px" height="32px" viewBox="0 0 32 32" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="11" cy="15.5" r="1.5"/>
@@ -11,31 +11,30 @@ const Query = () =>{
                 <p className="font-semibold text-3xl py-4 text-center mx-4">Have a Query</p>
             </div>
             <p className="text-center font-semibold py-2">Got any questions or suggestions? Fill out this form to reach out.</p>
-            <div className="flex justify-center items-center lg:space-x-24 border-solid border-2 border-black m-12  rounded-3xl">
-                <div className="rounded-3xl">
+            <div className="flex w-[60%] mx-auto items-center justify-center border-solid border-2 border-black my-8  rounded-3xl">
+                <div className="rounded-3xl flex justify-center mr-10">
                   <img src="./images/contact.png" alt="Contact"/>
                 </div>
                 <div className="font-popins ">
                     <div className="my-8 w-full">
                         <label className="font-semibold pr-4" >Name : </label>
-                        <input value="" className="rounded-2xl p-2 text-center " placeholder="Enter your full name"/>
+                        <input value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your full name"/>
                     </div>
                     <div className="my-8 w-full">
                         <label className="font-semibold pr-4" >Email : </label>
-                        <input value="" className="rounded-2xl p-2 text-center " placeholder="Enter your email"/>
+                        <input value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your email"/>
                     </div>
                     <div className="my-8 w-full">
-                        <label className="font-semibold pr-4" >Phone : </label>
-                        <input value="" className="rounded-2xl p-2 text-center" placeholder="Enter your contact number"/>
+                        <label className="font-semibold pr-3" >Phone : </label>
+                        <input value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your contact number"/>
                     </div>
-                    <div className="my-8 w-full">
-                        <label className="font-semibold pr-4" >Message : </label>
-                        <textarea value="" className="rounded-2xl p-2 text-center" placeholder="Enter your contact number"/>    
+                    <div className="my-8 w-full flex items-center">
+                        <label className="font-semibold pr-2" >Message :</label>
+                        <textarea value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your contact number"/>    
                     </div>
                 </div>
 
             </div>
-            
         </div>
     )
 }
