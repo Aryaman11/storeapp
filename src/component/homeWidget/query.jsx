@@ -1,6 +1,6 @@
 const Query = () =>{
     return(
-        <div className="mx-32 my-8 py-4 bg-[#EDEBEB] font-poppins rounded-3xl ">
+        <div className="min-[900px]:mx-32 mx-16 my-8 py-4 bg-[#EDEBEB] font-poppins rounded-3xl ">
             <div className="flex justify-center items-center">
                 <svg fill="#000000" width="32px" height="32px" viewBox="0 0 32 32" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="11" cy="15.5" r="1.5"/>
@@ -10,26 +10,26 @@ const Query = () =>{
                 </svg>
                 <p className="font-semibold text-3xl py-4 text-center mx-4">Have a Query</p>
             </div>
-            <p className="text-center font-semibold py-2">Got any questions or suggestions? Fill out this form to reach out.</p>
-            <div className="flex w-[60%] mx-auto items-center justify-center border-solid border-2 border-black my-8  rounded-3xl">
-                <div className="rounded-3xl flex justify-center mr-10">
+            <p className="text-center font-semibold py-2 px-4">Got any questions or suggestions? Fill out this form to reach out.</p>
+            <div className="max-[999px]:flex-col flex w-[60%] mx-auto items-center justify-center border-solid border-2 border-black my-8  rounded-3xl">
+                <div className="rounded-3xl flex justify-center max-[999px]:items-center mr-10">
                   <img src="./images/contact.png" alt="Contact"/>
                 </div>
                 <div className="font-popins ">
-                    <div className="my-8 w-full">
-                        <label className="font-semibold pr-4" >Name : </label>
+                    <div className="my-8 w-full flex items-center max-[999px]:flex-col">
+                        <label className="font-semibold pr-4 min-[1000px]:flex" >Name <span className="max-[999px]:hidden">:</span> </label>
                         <input value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your full name"/>
                     </div>
-                    <div className="my-8 w-full">
-                        <label className="font-semibold pr-4" >Email : </label>
+                    <div className="my-8 w-full flex items-center max-[999px]:flex-col">
+                        <label className="font-semibold pr-4 min-[1000px]:flex" >Email <span className="max-[999px]:hidden">:</span> </label>
                         <input value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your email"/>
                     </div>
-                    <div className="my-8 w-full">
-                        <label className="font-semibold pr-3" >Phone : </label>
+                    <div className="my-8 w-full flex items-center max-[999px]:flex-col">
+                        <label className="font-semibold pr-3" >Phone <span className="max-[999px]:hidden">:</span> </label>
                         <input value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your contact number"/>
                     </div>
-                    <div className="my-8 w-full flex items-center">
-                        <label className="font-semibold pr-2" >Message :</label>
+                    <div className="my-8 w-full flex items-center max-[999px]:flex-col">
+                        <label className="font-semibold pr-2" >Message <span className="max-[999px]:hidden">:</span></label>
                         <textarea value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your contact number"/>    
                     </div>
                 </div>
