@@ -11,7 +11,7 @@ const Query = () =>{
                 <p className="font-semibold text-3xl py-4 text-center mx-4">Have a Query</p>
             </div>
             <p className="text-center font-semibold py-2 px-4">Got any questions or suggestions? Fill out this form to reach out.</p>
-            <div className="max-[999px]:flex-col flex w-[60%] mx-auto items-center justify-center border-solid border-2 border-black my-8  rounded-3xl">
+            <div className="max-[999px]:flex-col flex w-[90%] min-[800px]:w-[60%] mx-auto items-center justify-center border-solid border-2 border-black my-8  rounded-3xl">
                 <div className="rounded-3xl flex justify-center max-[999px]:items-center mr-10">
                   <img src="./images/contact.png" alt="Contact"/>
                 </div>
