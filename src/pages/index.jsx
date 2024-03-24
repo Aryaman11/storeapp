@@ -11,8 +11,9 @@ const Home = () =>{
              <Header/>
              <Banner/>
              <Offer/>
-             <Query/>   
              <InfoBox/>
+             <Query/>   
+             
              
             <Footer/>
         </div>
