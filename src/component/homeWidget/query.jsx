@@ -32,9 +32,13 @@ const Query = () =>{
                         <label className="font-semibold pr-2" >Message <span className="max-[999px]:hidden">:</span></label>
                         <textarea value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your contact number"/>    
                     </div>
+                    <div className="flex justify-center py-4">
+                    <button className="bg-[#8E8988]  text-white font-semibold px-6 py-2 rounded-xl">Submit</button>
+                    </div>
                 </div>
-
+                
             </div>
+            
         </div>
     )
 }
