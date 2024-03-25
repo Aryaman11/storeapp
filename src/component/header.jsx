@@ -7,15 +7,13 @@ const Header = () =>{
 
             {/* Header for large device and other larger devices starts  */}
 
-            <div className="bg-[#F8F7F7] md:px-24 md:py-1 shadow-md max-md:hidden">
-                
-                <ul className=" md:grid md:grid-flow-col md:grid-cols-5 text-xl font-medium text-[#8E8988] font-poppins md:items-center ">
-                    <li className="md:w-[50%]"><img className="rounded-2xl" src='./images/logo.png'/></li>
+            <div className="bg-[#F8F7F7] md:py-1 shadow-md max-md:hidden flex justify-between items-center md:pl-8">
+                <img className="rounded-2xl md:w-[10%]" src='./images/logo.png'/>
+                <ul className="w-[60%] md:grid md:grid-flow-col md:grid-cols-4 text-xl font-medium text-[#8E8988] font-poppins md:items-center ">
                     <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer"><Link to="/">Home</Link></li>
                     <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer">Category</li>
                     <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer"><Link to="/about">About us</Link></li>
                     <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer"><Link to="/contact">Contact us</Link></li>
-                    <li></li>
                 </ul>
 
             </div>

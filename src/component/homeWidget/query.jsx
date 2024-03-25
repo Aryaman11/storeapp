@@ -1,4 +1,10 @@
+import { useEffect, useState } from "react";
+
+
 const Query = () =>{
+    
+    const[name,setName]=useState()
+
     return(
         <div className="min-[900px]:mx-32 mx-16 my-8 py-4 bg-[#EDEBEB] font-poppins rounded-3xl ">
             <div className="flex justify-center items-center">
