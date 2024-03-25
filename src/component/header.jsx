@@ -8,7 +8,7 @@ const Header = () =>{
             {/* Header for large device and other larger devices starts  */}
 
             <div className="bg-[#F8F7F7] md:py-1 shadow-md max-md:hidden flex justify-between items-center md:pl-8">
-                <img className="rounded-2xl md:w-[10%]" src='./images/logo.png'/>
+                <img className="rounded-xl md:w-[7%]" src='./images/logo.png'/>
                 <ul className="w-[60%] md:grid md:grid-flow-col md:grid-cols-4 text-xl font-medium text-[#8E8988] font-poppins md:items-center ">
                     <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer"><Link to="/">Home</Link></li>
                     <li className="hover:font-semibold tracking-wide hover:text-[#787372] cursor-pointer">Category</li>
