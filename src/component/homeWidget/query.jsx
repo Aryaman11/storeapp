@@ -3,7 +3,33 @@ import { useEffect, useState } from "react";
 
 const Query = () =>{
     
-    const[name,setName]=useState()
+    const[user,setuser]=useState({
+        name : "", email: "" , phone : "", message :""
+    });
+
+    let name,value;
+
+    const handleInputs =(e)=>{
+        console.log(e);
+        name= e.target.name;
+        value = e.target.value;
+
+        setuser({...user,[name]:value})
+
+    }
+
+    const submitInputs =()=> {
+        console.log("demo",user)
+
+        if (user.name== ""){
+            console.log("Enter your name")
+        }
+        else if (user.email==""){
+            console.log("Enter Email")
+        }
+        
+
+    }
 
     return(
         <div className="min-[900px]:mx-32 mx-16 my-8 py-4 bg-[#EDEBEB] font-poppins rounded-3xl ">
@@ -24,22 +50,38 @@ const Query = () =>{
                 <div className="font-popins ">
                     <div className="my-8 w-full flex items-center max-[999px]:flex-col">
                         <label className="font-semibold pr-4 min-[1000px]:flex" >Name <span className="max-[999px]:hidden">:</span> </label>
-                        <input value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your full name"/>
+                        <input name="name" className="rounded-xl p-2 text-center w-auto" 
+                        
+                        value={user.name}
+                        onChange={handleInputs}
+                        placeholder="Enter your full name"/>
                     </div>
                     <div className="my-8 w-full flex items-center max-[999px]:flex-col">
                         <label className="font-semibold pr-4 min-[1000px]:flex" >Email <span className="max-[999px]:hidden">:</span> </label>
-                        <input value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your email"/>
+                        <input name="email" className="rounded-xl p-2 text-center w-auto" 
+                        
+                        value={user.email}
+                        onChange={handleInputs}
+                        placeholder="Enter your email"/>
                     </div>
                     <div className="my-8 w-full flex items-center max-[999px]:flex-col">
                         <label className="font-semibold pr-3" >Phone <span className="max-[999px]:hidden">:</span> </label>
-                        <input value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your contact number"/>
+                        <input name="phone" className="rounded-xl p-2 text-center w-auto" 
+                        
+                        value={user.phone}
+                        onChange={handleInputs}
+                        placeholder="Enter your contact number"/>
                     </div>
                     <div className="my-8 w-full flex items-center max-[999px]:flex-col">
                         <label className="font-semibold pr-2" >Message <span className="max-[999px]:hidden">:</span></label>
-                        <textarea value="" className="rounded-xl p-2 text-center w-auto" placeholder="Enter your contact number"/>    
+                        <textarea name="message" className="rounded-xl p-2 text-center w-auto" 
+                        
+                        value={user.message}
+                        onChange={handleInputs}
+                        placeholder="Enter your contact number"/>    
                     </div>
                     <div className="flex justify-center py-4">
-                    <button className="bg-[#8E8988]  text-white font-semibold px-6 py-2 rounded-xl">Submit</button>
+                    <button className="bg-[#8E8988]  text-white font-semibold px-6 py-2 rounded-xl" onClick={submitInputs}>Submit</button>
                     </div>
                 </div>
                 
